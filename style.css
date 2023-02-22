@@ -71,10 +71,18 @@ a {
   .container__players-list {
     flex-basis: 0%;
     flex-grow: 1;
-    border-right: solid black;
     font-size: 3rem;
     text-align: center;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    overflow: auto; }
+    .container__players-list::-webkit-scrollbar {
+      width: 10px; }
+      .container__players-list::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 20px; }
+      .container__players-list::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 20px; }
 
 /*
     &__column {
