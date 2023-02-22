@@ -4,8 +4,15 @@
   "description": "An application for An Application for the management of Grass Roots Football.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "compile-sass": "^2.0.0"
+  }
 }

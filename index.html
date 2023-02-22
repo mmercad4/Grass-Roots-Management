@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Grass Roots Management</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <script defer src="./js/controller.js"></script>
   </head>
   <body>
+    <nav>
+      <ul class="nav">
+        <li class="nav__logo-box"><a href="#">Instructions</a></li>
+        <li class="nav__link">Grass Roots Management</li>
+      </ul>
+    </nav>
     <main>
-        <h1>Welcome to My Website</h1>  
+      <div class="container">
+        <div class="container__players-title">Players</div>
+        <div class="container__field-title">Field</div>
+      </div>
+      <div class="container">
+        <div class="container__players-list container__column-full"></div>
+        <div class="container__field container__column-full"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Soccer_Field_Transparant.svg" alt="soccerfield"></div>
+      </div>
     </main>
-	<script src="index.js"></script>
   </body>
 </html>
