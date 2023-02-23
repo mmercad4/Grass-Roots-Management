@@ -55,12 +55,12 @@ a {
   text-decoration: none;
 }
 
-.container {
+.heading {
   display: flex;
 
   &__field-title {
     flex-basis: 0%;
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem;
@@ -76,6 +76,10 @@ a {
     padding-top: 1rem;
     border-bottom: solid black;
   }
+}
+
+.information {
+  display: flex;
 
   &__column-full {
     height: calc(100vh - 12rem);
@@ -83,14 +87,14 @@ a {
 
   &__field {
     flex-basis: 0%;
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem;
 
     img {
       height: 98%;
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -116,6 +120,40 @@ a {
       }
     }
   }
+}
+
+.player {
+  &-information-header {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: solid black;
+    font-weight: bold;
+  }
+
+  &-information {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: solid black;
+    margin: 2rem;
+  }
+}
+
+.dragging{
+  background: red;
+}
+
+.player-icon-map{
+  position: absolute;
+  top: 500px;
+  left: 500px; 
+  width: 50px;
+  height: 50px;
+  background: rgba(30,50,80,1);
+  border-radius: 50% 50%;
+  color: $primary-color;
+  text-align: center;
 }
 
 /*

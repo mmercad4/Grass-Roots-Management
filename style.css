@@ -40,16 +40,16 @@ a {
   color: white;
   text-decoration: none; }
 
-.container {
+.heading {
   display: flex; }
-  .container__field-title {
+  .heading__field-title {
     flex-basis: 0%;
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem;
     border-bottom: solid black; }
-  .container__players-title {
+  .heading__players-title {
     flex-basis: 0%;
     flex-grow: 1;
     border-right: solid black;
@@ -57,32 +57,63 @@ a {
     text-align: center;
     padding-top: 1rem;
     border-bottom: solid black; }
-  .container__column-full {
+
+.information {
+  display: flex; }
+  .information__column-full {
     height: calc(100vh - 12rem); }
-  .container__field {
+  .information__field {
     flex-basis: 0%;
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem; }
-    .container__field img {
+    .information__field img {
       height: 98%;
-      width: 100%; }
-  .container__players-list {
+      width: 80%; }
+  .information__players-list {
     flex-basis: 0%;
     flex-grow: 1;
     font-size: 3rem;
     text-align: center;
     padding-top: 1rem;
     overflow: auto; }
-    .container__players-list::-webkit-scrollbar {
+    .information__players-list::-webkit-scrollbar {
       width: 10px; }
-      .container__players-list::-webkit-scrollbar-track {
+      .information__players-list::-webkit-scrollbar-track {
         background: #ddd;
         border-radius: 20px; }
-      .container__players-list::-webkit-scrollbar-thumb {
+      .information__players-list::-webkit-scrollbar-thumb {
         background: #666;
         border-radius: 20px; }
+
+.player-information-header {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border: solid black;
+  font-weight: bold; }
+
+.player-information {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  border: solid black;
+  margin: 2rem; }
+
+.dragging {
+  background: red; }
+
+.player-icon-map {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  width: 50px;
+  height: 50px;
+  background: #1e3250;
+  border-radius: 50% 50%;
+  color: #ffffff;
+  text-align: center; }
 
 /*
     &__column {
