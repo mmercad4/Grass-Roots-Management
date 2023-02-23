@@ -15,7 +15,7 @@ player1Drag.addEventListener("dragend", (ev) => {
 });
 
 const target = document.querySelector("#field-target");
-const parenttarget = document.querySelector(".information__field")
+const parenttarget = document.querySelector(".information__field");
 
 target.addEventListener("dragover", (ev) => {
   console.log("Drag Over");
@@ -29,14 +29,10 @@ target.addEventListener("drop", (ev) => {
 
   const data = ev.dataTransfer.getData("text");
   const source = document.getElementById(data);
-  
+
   source.removeAttribute("#player-1");
   source.classList.add("player-icon-map");
-  ev.target.appendChild(source);
+  source.textContent = "15";
 
-  const player = document.createElement('div');
-  player.classList.add("player-icon-map");
-  player.textContent = "15";
-  ev.parentTarget.appendChild(player);
-
+  target.appendChild(source);
 });
